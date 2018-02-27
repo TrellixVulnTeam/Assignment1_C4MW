@@ -8,3 +8,4 @@ def length(the_password):
         return False
 
 def numero_alpha(the_password):
+    return False
