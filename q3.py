@@ -9,7 +9,7 @@ spans = bs.findAll('span', attrs={'class': 'name'})
 src = bs.findAll('span', attrs={'class': 'src'})
 date = bs.findAll('span', attrs={'class': 'date'})
 
-for i in range(0,10):
+for i in range(0, 10):
     articles.write(spans[i].text.strip() + "," + src[i].text + "," + date[i].text + "\n")
 
 # Think I need to return this as a list

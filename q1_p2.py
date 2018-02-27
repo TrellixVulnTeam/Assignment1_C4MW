@@ -44,7 +44,7 @@ for i in range(0, 150000):
 # print("Min: ", min(price_list))
 # print ("Mean", (sum(price_list)/float(len(price_list))))
 
-print("Min price achieved at time: ",datetime.datetime.fromtimestamp(
+print("Min price achieved at time: ", datetime.datetime.fromtimestamp(
                 int(time[min_index])
             ).strftime('%Y-%m-%d %H:%M:%S'))
 print("Max price achieved at time: ",datetime.datetime.fromtimestamp(
