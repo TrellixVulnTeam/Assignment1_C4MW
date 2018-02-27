@@ -9,10 +9,10 @@ for line in lines:
     thisline = line.split(" ")
     for index in range(0, len(thisline)):
         if thisline[index] in d:
-            d[thisline[index]] = d[thisline[index]] + 1
+            d[thisline[index]] += 1
         else:
             d[thisline[index]] = 1
-        index = index + 1
+        index += 1
 
 print(d)
 
