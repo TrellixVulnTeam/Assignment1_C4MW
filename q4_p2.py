@@ -13,3 +13,5 @@ else:
         if index <= 10:
             top_10_words.write(word + ", " + str(occurrence) + "\n")
             index += 1
+        else:
+            break

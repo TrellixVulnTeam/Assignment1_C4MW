@@ -18,4 +18,4 @@ def word_count():
 
     return word_count_dict
 
-#main function
+    # main function
