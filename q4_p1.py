@@ -17,3 +17,5 @@ def word_count():
             index += 1
 
     return word_count_dict
+
+#main function

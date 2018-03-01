@@ -1,5 +1,6 @@
-primes = range(2, 101)
+nums = range(2, 100)
 for i in range(2, 8):
-    primes = list(filter(lambda x: x == i or x % i, primes))
+    nums = list(filter(lambda x: x == i or x % i, nums))
 
-print(primes)
+print(nums)
+

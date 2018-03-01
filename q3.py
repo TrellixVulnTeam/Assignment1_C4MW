@@ -15,3 +15,4 @@ for i in range(0, 10):
     articles.write(spans[i].text.strip() + "," + src[i].text + "," + date[i].text + "\n")
 
 # print("\n".join(articles_list))
+articles.close()
