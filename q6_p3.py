@@ -1,6 +1,5 @@
 def interleavings(list1, list2):
-    interleaved_list = []
-    interleaved_list = list1
+    interleaved_list = list1 + list2
 
 
     print(interleaved_list)

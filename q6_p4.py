@@ -8,6 +8,8 @@ def count_pattern_helper(ord_str):
 def count_pattern(str, pattern, replace_str):
 
     assert len(str) >= len(pattern)
+    if len(pattern) == 1:
+        return "Incorrect pattern"
     replaced_str = str[:]
     location_of_pattern = []
     str_list = list(replaced_str)
