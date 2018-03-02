@@ -1,7 +1,7 @@
 from q4_p1 import word_count
 
 top_10_words = open("top10words.txt", "w")
-word_dict = word_count()
+word_dict = word_count("100-0.txt")
 top_word_list = []
 index = 1
 
@@ -15,3 +15,5 @@ else:
             index += 1
         else:
             break
+
+top_10_words.close()

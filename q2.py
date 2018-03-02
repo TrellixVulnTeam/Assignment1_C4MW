@@ -38,15 +38,12 @@ def pearson_correlation(time_list, prices_list):
 
     return numerator / (denominator ** (1 / 2.0))
 
-
-file_path = input("Please enter file name: ")
-
 # Local variables
 price_list = []
 time = []
 
 # Open the file specified by the user and convert
-with open(file_path, newline='') as f:
+with open("prices_sample.csv", newline='') as f:
     reader = csv.reader(f)
     # Iterate over the lines
     for row in reader:

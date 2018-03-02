@@ -6,9 +6,11 @@ def count_pattern_helper(ord_str):
 
 
 def count_pattern(str, pattern, replace_str):
+
     assert len(str) >= len(pattern)
+    replaced_str = str[:]
     location_of_pattern = []
-    str_list = list(str)
+    str_list = list(replaced_str)
 
     # Find the ordinance of the pattern to check against str
     ordinance_list = count_pattern_helper(pattern)
@@ -26,8 +28,8 @@ def count_pattern(str, pattern, replace_str):
     # print(location_of_pattern)
 
     for k in range(0, len(location_of_pattern)):
-        str = str.replace("".join(location_of_pattern[k]), replace_str)
-    return str
+        replaced_str = replaced_str.replace("".join(location_of_pattern[k]), replace_str)
+    return replaced_str
 
 
 print(count_pattern("shihfdddedaaba", "xyx", "123"))
